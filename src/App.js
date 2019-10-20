@@ -1,20 +1,23 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar/navbar';
-import Header from './components/Header/header';
-import Bookcard from './components/BookCard/bookcard'
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Saved from "./pages/saved";
+import Search from "./pages/search";
+import About from "./pages/about";
+import Wrapper from "./components/Wrapper";
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <Bookcard />
-        </div>
+    <Router>
+      <div>
+        <Wrapper>
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/saved" component={Saved} />
+          <Route exact path="/search" component={Search} />
+        </Wrapper>
       </div>
-    </div>
+    </Router>
   );
 }
 

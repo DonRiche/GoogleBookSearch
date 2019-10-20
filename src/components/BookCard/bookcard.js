@@ -1,15 +1,16 @@
 import React from 'react';
 import './bookcard.css'
 
-export default function bookca() {
+export default function bookcard() {
     return (
         <div>
             <div className="cardWrapper">
-                <img src="..." class="card-img" alt="..."></img>
+                <h2 class="book-title">Mr.Mercedes</h2>
+                <h3 class="author-title">Stephen King</h3>
+
+                <img src="https://tse2.mm.bing.net/th?id=OIP.hosc-oFP2PRK4wFeLbo1ZAAAAA&pid=Api&P=0&w=300&h=300" class="card-img" alt="..."></img>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="book-description">Quis deserunt exercitation laboris amet irure. Aliquip nostrud Lorem exercitation ex consequat Lorem consectetur voluptate. Velit tempor adipisicing elit est nulla et esse laboris pariatur excepteur. Sint nulla adipisicing velit do quis ullamco. Cupidatat id nulla consequat tempor veniam ad nisi non tempor. Eiusmod sint amet enim occaecat tempor dolor ut. Aute eu duis esse anim nostrud veniam magna id.</p>
                 </div>
             </div>
         </div>

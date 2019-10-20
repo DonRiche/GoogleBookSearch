@@ -1,4 +1,28 @@
+.cardWrapper{
+    background-color: rgb(70, 68, 68);
+    height: 55vh;
+    padding: 30px;
+}
+.card-img{
+    width: 15%;
+}
+.card-body{
+    margin-left: 10px;
+}
 img{
+    float: left;
+    display:block;
     background-color: black;
-
+}
+.book-title{
+    color: whitesmoke;
+}
+.author-title{
+    color: whitesmoke;
+}
+.book-description{
+    text-align: left;
+    display: block;
+    padding-left: 16%;
+    color: whitesmoke;
 }
