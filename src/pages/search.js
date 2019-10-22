@@ -8,8 +8,8 @@ function search() {
         <div className="App">
             <Navbar />
             <Header />
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
                     <div className="jumboHeader">Saved Books
           </div>
                     <Bookcard />
