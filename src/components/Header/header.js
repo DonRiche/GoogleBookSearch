@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './header.css'
 import SearchArea from '../SearchArea/SearchArea'
 import request from 'superagent'
+import Booklist from '../Booklist/Booklist'
 
 class Header extends Component {
     constructor(props) {
@@ -20,6 +21,9 @@ class Header extends Component {
             .then((data) => {
                 console.log(data);
 
+                this.setState({
+                    books: [...data.body.items]
+                })
             })
     }
 
@@ -33,6 +37,8 @@ class Header extends Component {
                 <div className="container">
                     <h1 className="display-3">(React) Google Books Search</h1>
                     <SearchArea searchBook={this.searchBook} handleSearch={this.handleSearch} />
+                    <Booklist books={this.state.books} />
+
                 </div>
             </div>
         );
