@@ -23,6 +23,7 @@ img{
     color: whitesmoke;
 }
 .book-description{
+    font-size: 90%;
     text-align: left;
     display: block;
     padding-left: 16%;
